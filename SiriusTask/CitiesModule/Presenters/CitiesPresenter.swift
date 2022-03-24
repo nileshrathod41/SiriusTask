@@ -11,6 +11,7 @@ protocol CitiesPresenterToViewProtocol: class {
     func startLoading()
     func stopLoading()
     func setFillteredCities(cities: [City])
+    func setAllCities(cities: [City])
 }
 
 class CitiesPresenter {
@@ -28,5 +29,10 @@ extension CitiesPresenter: CitiesInteractorToPresenterProtocol {
     /// Interactor will call this method when search result is ready
     func citiesSearchResults(cities: [City]) {
         viewDelegate.setFillteredCities(cities: cities)
+    }
+    
+    /// Interactor will call this method when search result is ready
+    func citiesAllResults(cities: [City]) {
+        viewDelegate.setAllCities(cities: cities)
     }
 }
