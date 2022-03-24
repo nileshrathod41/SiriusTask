@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import BackBaseTask
+@testable import SiriusTask
 
 class SiriusTaskTests: XCTestCase {
 
