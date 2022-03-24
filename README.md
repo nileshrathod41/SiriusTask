@@ -4,15 +4,15 @@ The goal of this assignment is to evaluate the problem solving skills, UX judgem
 
 We have a list of cities containing around 200k entries in JSON format. Each entry contains the following information:
 
-{
+  {
     "country":"UA",
     "name":"Hurzuf",
     "_id":707860,
     "coord":{
             "lon":34.283333,
         "lat":44.549999
-    }
-}
+     }
+   }
 
 My Solution 
 
