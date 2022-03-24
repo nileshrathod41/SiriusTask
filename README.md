@@ -18,6 +18,5 @@ My Solution
 
 - First Use VIP-Architecture (Clean Swift Architecture)
 - I have preprocessed the list of cities into a dictionary where the key is the city first character in lowercase,
-- while the value is array of cities that start with the same character. var dataSource: [ String: [ City ] ] = [:]
 - I've alphabetically sorted all arrays in dictionary values.
 - I've written a binary search algorithm to search 
