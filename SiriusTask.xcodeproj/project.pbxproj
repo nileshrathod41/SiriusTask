@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8474307026695C4C000D0144 /* CitiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474306F26695C4C000D0144 /* CitiesPresenter.swift */; };
+		8474307526695ED7000D0144 /* CitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474307426695ED7000D0144 /* CitiesInteractor.swift */; };
+		8474307F266A0C46000D0144 /* CityLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474307D266A0C46000D0144 /* CityLocationViewController.swift */; };
+		84743080266A0C46000D0144 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8474307E266A0C46000D0144 /* LocationViewController.xib */; };
+		84BD35EA2669324D0095E116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD35E92669324D0095E116 /* AppDelegate.swift */; };
+		84BD35EC2669324D0095E116 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD35EB2669324D0095E116 /* SceneDelegate.swift */; };
+		84BD35EE2669324D0095E116 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD35ED2669324D0095E116 /* CitiesViewController.swift */; };
+		84BD35F12669324D0095E116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BD35EF2669324D0095E116 /* Main.storyboard */; };
+		84BD35F62669324F0095E116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BD35F52669324F0095E116 /* Assets.xcassets */; };
+		84BD35F92669324F0095E116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BD35F72669324F0095E116 /* LaunchScreen.storyboard */; };
+		84BD36042669324F0095E116 /* SiriusTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD36032669324F0095E116 /* SiriusTaskTests.swift */; };
+		84BD360F2669324F0095E116 /* SiriusTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD360E2669324F0095E116 /* SiriusTaskUITests.swift */; };
+		84BD363A266933F10095E116 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 84BD3639266933F10095E116 /* cities.json */; };
+		84BD36422669349B0095E116 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD36412669349B0095E116 /* CityModel.swift */; };
+		84EEADD1266A689600512780 /* CitiesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEADD0266A689600512780 /* CitiesRouter.swift */; };
+		84EEADDF266BBBE000512780 /* City+OperatorOverloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEADDE266BBBE000512780 /* City+OperatorOverloading.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84BD36002669324F0095E116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BD35DE2669324D0095E116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84BD35E52669324D0095E116;
+			remoteInfo = BackBaseTask;
+		};
+		84BD360B2669324F0095E116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BD35DE2669324D0095E116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84BD35E52669324D0095E116;
+			remoteInfo = BackBaseTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8474306F26695C4C000D0144 /* CitiesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesPresenter.swift; sourceTree = "<group>"; };
+		8474307426695ED7000D0144 /* CitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesInteractor.swift; sourceTree = "<group>"; };
+		8474307D266A0C46000D0144 /* CityLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityLocationViewController.swift; sourceTree = "<group>"; };
+		8474307E266A0C46000D0144 /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
+		84BD35E62669324D0095E116 /* SiriusTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriusTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BD35E92669324D0095E116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84BD35EB2669324D0095E116 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84BD35ED2669324D0095E116 /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		84BD35F02669324D0095E116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84BD35F52669324F0095E116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84BD35F82669324F0095E116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84BD35FA2669324F0095E116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BD35FF2669324F0095E116 /* SiriusTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiriusTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BD36032669324F0095E116 /* SiriusTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriusTaskTests.swift; sourceTree = "<group>"; };
+		84BD36052669324F0095E116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BD360A2669324F0095E116 /* SiriusTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiriusTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BD360E2669324F0095E116 /* SiriusTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriusTaskUITests.swift; sourceTree = "<group>"; };
+		84BD36102669324F0095E116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BD3639266933F10095E116 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		84BD36412669349B0095E116 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		84EEADD0266A689600512780 /* CitiesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRouter.swift; sourceTree = "<group>"; };
+		84EEADDE266BBBE000512780 /* City+OperatorOverloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+OperatorOverloading.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84BD35E32669324D0095E116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BD35FC2669324F0095E116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BD36072669324F0095E116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		847430662669582C000D0144 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				847430692669585B000D0144 /* Models */,
+				84BD3639266933F10095E116 /* cities.json */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		847430672669583F000D0144 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84BD35ED2669324D0095E116 /* CitiesViewController.swift */,
+				8474307D266A0C46000D0144 /* CityLocationViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		847430682669584F000D0144 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				8474306F26695C4C000D0144 /* CitiesPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		847430692669585B000D0144 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84BD36412669349B0095E116 /* CityModel.swift */,
+				84EEADDE266BBBE000512780 /* City+OperatorOverloading.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84BD35DD2669324D0095E116 = {
+			isa = PBXGroup;
+			children = (
+				84BD35E82669324D0095E116 /* SiriusTask */,
+				84BD36022669324F0095E116 /* SiriusTaskTests */,
+				84BD360D2669324F0095E116 /* SiriusTaskUITests */,
+				84BD35E72669324D0095E116 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84BD35E72669324D0095E116 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BD35E62669324D0095E116 /* SiriusTask.app */,
+				84BD35FF2669324F0095E116 /* SiriusTaskTests.xctest */,
+				84BD360A2669324F0095E116 /* SiriusTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84BD35E82669324D0095E116 /* SiriusTask */ = {
+			isa = PBXGroup;
+			children = (
+				84BD361F2669328F0095E116 /* CitiesModule */,
+				84BD3620266932BD0095E116 /* SupportFiles */,
+				84BD35E92669324D0095E116 /* AppDelegate.swift */,
+				84BD35EB2669324D0095E116 /* SceneDelegate.swift */,
+				84BD35F72669324F0095E116 /* LaunchScreen.storyboard */,
+			);
+			path = SiriusTask;
+			sourceTree = "<group>";
+		};
+		84BD36022669324F0095E116 /* SiriusTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				84BD36032669324F0095E116 /* SiriusTaskTests.swift */,
+				84BD36052669324F0095E116 /* Info.plist */,
+			);
+			path = SiriusTaskTests;
+			sourceTree = "<group>";
+		};
+		84BD360D2669324F0095E116 /* SiriusTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84BD360E2669324F0095E116 /* SiriusTaskUITests.swift */,
+				84BD36102669324F0095E116 /* Info.plist */,
+			);
+			path = SiriusTaskUITests;
+			sourceTree = "<group>";
+		};
+		84BD361F2669328F0095E116 /* CitiesModule */ = {
+			isa = PBXGroup;
+			children = (
+				84EEADC3266A640D00512780 /* Router */,
+				84EEADC2266A640200512780 /* Interactor */,
+				847430682669584F000D0144 /* Presenters */,
+				847430672669583F000D0144 /* Views */,
+				84BD35EF2669324D0095E116 /* Main.storyboard */,
+				8474307E266A0C46000D0144 /* LocationViewController.xib */,
+				847430662669582C000D0144 /* DataSource */,
+			);
+			path = CitiesModule;
+			sourceTree = "<group>";
+		};
+		84BD3620266932BD0095E116 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				84BD35FA2669324F0095E116 /* Info.plist */,
+				84BD35F52669324F0095E116 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		84EEADC2266A640200512780 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8474307426695ED7000D0144 /* CitiesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		84EEADC3266A640D00512780 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				84EEADD0266A689600512780 /* CitiesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84BD35E52669324D0095E116 /* SiriusTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BD36132669324F0095E116 /* Build configuration list for PBXNativeTarget "SiriusTask" */;
+			buildPhases = (
+				84BD35E22669324D0095E116 /* Sources */,
+				84BD35E32669324D0095E116 /* Frameworks */,
+				84BD35E42669324D0095E116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriusTask;
+			productName = BackBaseTask;
+			productReference = 84BD35E62669324D0095E116 /* SiriusTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84BD35FE2669324F0095E116 /* SiriusTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BD36162669324F0095E116 /* Build configuration list for PBXNativeTarget "SiriusTaskTests" */;
+			buildPhases = (
+				84BD35FB2669324F0095E116 /* Sources */,
+				84BD35FC2669324F0095E116 /* Frameworks */,
+				84BD35FD2669324F0095E116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84BD36012669324F0095E116 /* PBXTargetDependency */,
+			);
+			name = SiriusTaskTests;
+			productName = BackBaseTaskTests;
+			productReference = 84BD35FF2669324F0095E116 /* SiriusTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84BD36092669324F0095E116 /* SiriusTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BD36192669324F0095E116 /* Build configuration list for PBXNativeTarget "SiriusTaskUITests" */;
+			buildPhases = (
+				84BD36062669324F0095E116 /* Sources */,
+				84BD36072669324F0095E116 /* Frameworks */,
+				84BD36082669324F0095E116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84BD360C2669324F0095E116 /* PBXTargetDependency */,
+			);
+			name = SiriusTaskUITests;
+			productName = BackBaseTaskUITests;
+			productReference = 84BD360A2669324F0095E116 /* SiriusTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84BD35DE2669324D0095E116 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					84BD35E52669324D0095E116 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					84BD35FE2669324F0095E116 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 84BD35E52669324D0095E116;
+					};
+					84BD36092669324F0095E116 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 84BD35E52669324D0095E116;
+					};
+				};
+			};
+			buildConfigurationList = 84BD35E12669324D0095E116 /* Build configuration list for PBXProject "SiriusTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84BD35DD2669324D0095E116;
+			productRefGroup = 84BD35E72669324D0095E116 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84BD35E52669324D0095E116 /* SiriusTask */,
+				84BD35FE2669324F0095E116 /* SiriusTaskTests */,
+				84BD36092669324F0095E116 /* SiriusTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84BD35E42669324D0095E116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BD363A266933F10095E116 /* cities.json in Resources */,
+				84BD35F92669324F0095E116 /* LaunchScreen.storyboard in Resources */,
+				84BD35F62669324F0095E116 /* Assets.xcassets in Resources */,
+				84743080266A0C46000D0144 /* LocationViewController.xib in Resources */,
+				84BD35F12669324D0095E116 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BD35FD2669324F0095E116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BD36082669324F0095E116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84BD35E22669324D0095E116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BD36422669349B0095E116 /* CityModel.swift in Sources */,
+				84BD35EE2669324D0095E116 /* CitiesViewController.swift in Sources */,
+				8474307026695C4C000D0144 /* CitiesPresenter.swift in Sources */,
+				84BD35EA2669324D0095E116 /* AppDelegate.swift in Sources */,
+				84BD35EC2669324D0095E116 /* SceneDelegate.swift in Sources */,
+				8474307526695ED7000D0144 /* CitiesInteractor.swift in Sources */,
+				84EEADD1266A689600512780 /* CitiesRouter.swift in Sources */,
+				8474307F266A0C46000D0144 /* CityLocationViewController.swift in Sources */,
+				84EEADDF266BBBE000512780 /* City+OperatorOverloading.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BD35FB2669324F0095E116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BD36042669324F0095E116 /* SiriusTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BD36062669324F0095E116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BD360F2669324F0095E116 /* SiriusTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84BD36012669324F0095E116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84BD35E52669324D0095E116 /* SiriusTask */;
+			targetProxy = 84BD36002669324F0095E116 /* PBXContainerItemProxy */;
+		};
+		84BD360C2669324F0095E116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84BD35E52669324D0095E116 /* SiriusTask */;
+			targetProxy = 84BD360B2669324F0095E116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84BD35EF2669324D0095E116 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BD35F02669324D0095E116 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84BD35F72669324F0095E116 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BD35F82669324F0095E116 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84BD36112669324F0095E116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84BD36122669324F0095E116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84BD36142669324F0095E116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNX5X6328E;
+				INFOPLIST_FILE = "$(SRCROOT)/SiriusTask/SupportFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SiriusTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84BD36152669324F0095E116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNX5X6328E;
+				INFOPLIST_FILE = "$(SRCROOT)/SiriusTask/SupportFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SiriusTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84BD36172669324F0095E116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNX5X6328E;
+				INFOPLIST_FILE = BackBaseTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamed.shaban.BackBaseTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiriusTask.app/SiriusTask";
+			};
+			name = Debug;
+		};
+		84BD36182669324F0095E116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNX5X6328E;
+				INFOPLIST_FILE = BackBaseTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamed.shaban.BackBaseTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiriusTask.app/SiriusTask";
+			};
+			name = Release;
+		};
+		84BD361A2669324F0095E116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNX5X6328E;
+				INFOPLIST_FILE = BackBaseTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamed.shaban.BackBaseTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BackBaseTask;
+			};
+			name = Debug;
+		};
+		84BD361B2669324F0095E116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNX5X6328E;
+				INFOPLIST_FILE = BackBaseTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamed.shaban.BackBaseTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BackBaseTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BD35E12669324D0095E116 /* Build configuration list for PBXProject "SiriusTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BD36112669324F0095E116 /* Debug */,
+				84BD36122669324F0095E116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BD36132669324F0095E116 /* Build configuration list for PBXNativeTarget "SiriusTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BD36142669324F0095E116 /* Debug */,
+				84BD36152669324F0095E116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BD36162669324F0095E116 /* Build configuration list for PBXNativeTarget "SiriusTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BD36172669324F0095E116 /* Debug */,
+				84BD36182669324F0095E116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BD36192669324F0095E116 /* Build configuration list for PBXNativeTarget "SiriusTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BD361A2669324F0095E116 /* Debug */,
+				84BD361B2669324F0095E116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84BD35DE2669324D0095E116 /* Project object */;
+}
