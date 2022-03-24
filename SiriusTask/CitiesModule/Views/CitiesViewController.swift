@@ -102,6 +102,7 @@ extension CitiesViewController: CitiesPresenterToViewProtocol {
 
 extension CitiesViewController: UISearchBarDelegate {
     
+    // set Data
     /// called when text changes in search bar
     /// - Parameters:
     ///   - searchText: new typed text in the search bar
