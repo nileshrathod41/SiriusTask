@@ -20,7 +20,7 @@ class CitiesViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
-    let seconds = 4.0
+    let seconds = 3.0
     // MARK: - Properties
     var interactorDelegate: CitiesViewToInteractorProtocol!
     var citiesRouter: citiesRouterProtocol!
@@ -49,6 +49,8 @@ class CitiesViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             let searchText = "a"
             self.interactorDelegate.searchFor(userInput: searchText)
+            self.stopLoading()
+            self.searchBar.isUserInteractionEnabled = true
         }
     }
 }
@@ -106,7 +108,10 @@ extension CitiesViewController: UISearchBarDelegate {
     ///   - searchText: new typed text in the search bar
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
+            searchBar.isUserInteractionEnabled = false
+            startLoading()
             SetData()
+            return
         }
         interactorDelegate.searchFor(userInput: searchText)
     }
