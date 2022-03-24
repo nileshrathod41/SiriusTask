@@ -20,19 +20,19 @@ class CitiesViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
-    let seconds = 4.0
+    let seconds = 3.0
     // MARK: - Properties
     var interactorDelegate: CitiesViewToInteractorProtocol!
     var citiesRouter: citiesRouterProtocol!
     lazy var searchBar = UISearchBar(frame: CGRect.zero)
     var filtteredCities: [City] = []
-    
+    var allData: [City] = []
     // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         interactorDelegate.prepareCitiesData()
-        SetData()
+       // SetData()
     }
     
     /// setup views after view controller load
@@ -43,13 +43,6 @@ class CitiesViewController: UIViewController {
         searchBar.placeholder = "Search"
         navigationItem.titleView = searchBar
         activityIndicator?.startAnimating()
-    }
-    
-    func SetData() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            let searchText = "a"
-            self.interactorDelegate.searchFor(userInput: searchText)
-        }
     }
 }
 
@@ -83,6 +76,14 @@ extension CitiesViewController: CitiesPresenterToViewProtocol {
         }
     }
     
+    func setAllCities(cities: [City]) {
+        allData = cities
+        filtteredCities = cities
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+        }
+    }
+    
     /// This method will start and show the activity indicator
     func startLoading() {
         DispatchQueue.main.async { [weak self] in
@@ -101,12 +102,17 @@ extension CitiesViewController: CitiesPresenterToViewProtocol {
 
 extension CitiesViewController: UISearchBarDelegate {
     
+    // set Data
     /// called when text changes in search bar
     /// - Parameters:
     ///   - searchText: new typed text in the search bar
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
-            SetData()
+            filtteredCities = allData
+            DispatchQueue.main.async { [weak self] in
+                self?.tableView.reloadData()
+            }
+            return
         }
         interactorDelegate.searchFor(userInput: searchText)
     }

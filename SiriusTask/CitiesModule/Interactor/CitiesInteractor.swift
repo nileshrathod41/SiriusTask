@@ -9,6 +9,7 @@ import Foundation
 
 protocol CitiesInteractorToPresenterProtocol: class {
     func citiesSearchResults(cities: [City])
+    func citiesAllResults(cities: [City])
     func dataIsReady()
 }
 
@@ -57,6 +58,7 @@ class CitiesInteractor {
                 citiesDistributedData[firstChar]?.append(city)
             }
         }
+        presenterDelegate?.citiesAllResults(cities: citiesDistributedData["a"] ?? [City]())
     }
     
     func sortCitiesAlphabetically() {
